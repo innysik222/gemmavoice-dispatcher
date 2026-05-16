@@ -1,0 +1,22 @@
+{
+  "name": "GemmaVoice Dispatch",
+  "short_name": "GemmaVoice",
+  "description": "Offline Emergency Dispatcher with Local AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#facc15",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-large.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

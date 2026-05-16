@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #111827; /* Near Black */
+  --color-foreground: #FBBF24; /* Crisis Yellow */
+  --color-primary: #FBBF24;
+  --color-secondary: #374151; /* Dark Grey */
+  --color-alert: #EF4444; /* Emergency Red */
+  --color-safe: #10B981; /* Recovery Green */
+}
+
+:root {
+  --background: #111827;
+  --foreground: #FBBF24;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Tactile Crisis Buttons */
+.btn-crisis {
+  @apply px-8 py-4 text-2xl font-bold uppercase tracking-widest border-4 border-primary transition-all active:scale-95 active:bg-primary active:text-background;
+}
+
+.card-crisis {
+  @apply p-4 border-2 border-primary bg-secondary/20 rounded-lg;
+}
+
+/* No Purple/Violet Rule Enforcement */
+[style*="purple"], [style*="violet"], .text-purple-600, .bg-violet-500 {
+  display: none !important;
+}
